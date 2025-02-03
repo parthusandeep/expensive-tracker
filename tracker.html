@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="form">
+            <input type="text" id="description" placeholder="Expense description" required><br>
+            <select id="category" required>
+                <option value="">Select category</option>
+                <option value="transportation">Transportation</option>
+                <option value="food">Food</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select><br>
+            <input type="number" id="amount" placeholder="Amount" required><br>
+            <input type="submit" id="submit" value="Add Expense"><br>
+        </form>
+        <h3>Expense Summary</h3>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="expenseList">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="tracker.js"></script>
+</body>
+</html>
